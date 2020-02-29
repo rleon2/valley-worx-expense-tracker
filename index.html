@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+    </style>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js"></script>
+  
+</head>
+<body = onload="init()">
+    <div class="container-fluid">
+        <h1 class="my-5">Very simple Expense Tracker</h1>
+        <div class="row">
+            <div class="col"> 
+                <div id="input-boxes">
+                    <input 
+                    id = "expense-item" 
+                    class ="form-control" type = "number">
+                </div>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" onclick="deleteInput()">Delete</button>
+            </div>
+        </div>
+        
+        <p class="my-5">Total: <span id = "total"></span></p>
+    </div>
+
+</body>
+</html>
